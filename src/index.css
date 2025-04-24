@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+@theme{
+    --font-worksans: "Work Sans", "sans-serif";
+    --font-montserrat: "Montserrat","sans-serif";
+    --font-atkinson: "Atkinson Hyperlegible Mono",sans-serif;
+    --color-cream: #f3f3f3;
+    --color-wood:#B99750;
+    --color-resume:#EEA302;
+
+    --animate-slide-up: slideUp 2s ease-in-out;
+    --animate-slide-up-delay1: slideUp 1.4s ease-in-out 0.2s;
+    --animate-slide-up-delay2: slideUp 1.4s ease-in-out 0.2s;
+    --animate-slide-up-delay3: slideUp 1.4s ease-in-out 0.2s;
+
+}   @keyframes slideUp {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+.glass {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
